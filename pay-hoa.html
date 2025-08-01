@@ -1,22 +1,22 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-    <meta name="viewport" content="width=device-width" />
-    
-    <title>Contact Us - Sunchase IV Condos</title>
-    
-    <link href="css/bootstrap.css" rel="stylesheet" />
-	<link href="css/coming-sssoon.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay H.O.A - Sunchase IV HOA</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/coming-sssoon.css">
     
     <!--     Fonts     -->
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
-    
     <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            font-family: 'Arial', sans-serif;
+        }
+        
         /* Glass Navigation Bar Styles */
         .navbar-glass {
             background: rgba(0, 0, 0, 0.3) !important;
@@ -97,6 +97,46 @@
             background-color: rgba(255, 255, 255, 0.1);
         }
         
+        /* Mobile responsive adjustments */
+        @media (max-width: 768px) {
+            .navbar-glass .navbar-nav > li > a {
+                padding: 6px 15px;
+            }
+            
+            .navbar-glass .btn-signin {
+                margin: 3px 15px;
+                text-align: center;
+            }
+            
+            .navbar-glass .btn-register {
+                margin: 3px 15px;
+                text-align: center;
+            }
+        }
+        
+        /* Ensure navbar brand starts from far left */
+        .navbar-glass .container1 {
+            padding-left: 0;
+        }
+        
+        .navbar-glass .navbar-header {
+            margin-left: 0;
+        }
+        
+        /* Center navigation items vertically */
+        .navbar-glass .navbar-nav {
+            display: flex;
+            align-items: center;
+            margin-left: 25px;
+            margin-top: 15px;
+        }
+        
+        .navbar-glass .navbar-nav > li {
+            display: flex;
+            align-items: center;
+            margin-right: 15px;
+        }
+        
         /* Dropdown styling */
         .navbar-glass .dropdown-menu {
             background: rgba(0, 0, 0, 0.8);
@@ -128,106 +168,102 @@
             margin-left: 5px;
         }
         
-        /* Mobile responsive adjustments */
-        @media (max-width: 768px) {
-            .navbar-glass .navbar-nav > li > a {
-                padding: 6px 15px;
-            }
-            
-            .navbar-glass .btn-signin {
-                margin: 3px 15px;
-                text-align: center;
-            }
-            
-            .navbar-glass .btn-register {
-                margin: 3px 15px;
-                text-align: center;
-            }
+        .main-content {
+            margin-top: 80px;
+            padding: 20px;
         }
         
-        /* Ensure navbar brand starts from far left */
-        .navbar-glass .container {
-            padding-left: 0;
-        }
-        
-        .navbar-glass .navbar-header {
-            margin-left: 0;
-        }
-        
-       /* Center navigation items vertically */
-       .navbar-glass .navbar-nav {
-            display: flex;
-            align-items: center;
-            margin-left: 25px;
-            margin-top: 15px;
-        }
-        
-        .navbar-glass .navbar-nav > li {
-            display: flex;
-            align-items: center;
-            margin-right: 15px;
-        }
-        
-        /* Contact Page Specific Styles */
-        .contact-container {
-            background: rgba(0, 0, 0, 0.6);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 15px;
-            padding: 40px;
-            margin-top: 100px;
-            color: white;
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-        }
-        
-        .contact-title {
-            color: white;
-            font-size: 2.5em;
-            margin-bottom: 30px;
+        .page-header {
             text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+        
+        .page-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .page-header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .form-container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin: 0 auto;
+            max-width: auto;
+        }
+        
+        .iframe-wrapper {
+            position: relative;
+            width: 100%;
+            border-radius: 10px;
+            overflow: visible;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .iframe-wrapper iframe {
+            width: 100%;
+            height: 1200px;
+            border: none;
+            border-radius: 10px;
+            overflow: visible;
+        }
+        
+        .payment-info {
+            background: linear-gradient(135deg, #28a745, #20c997);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .payment-info h3 {
+            margin-bottom: 10px;
             font-weight: bold;
         }
         
-        .contact-info {
-            font-size: 1.1em;
-            line-height: 1.8;
+        .payment-info p {
+            margin-bottom: 5px;
+            font-size: 1.1rem;
         }
         
-        .contact-info h3 {
-            color: #1e90ff;
-            margin-bottom: 20px;
-            font-size: 1.3em;
+        .footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
         }
         
-        .contact-info p {
-            margin-bottom: 10px;
-        }
-        
-        .contact-info a {
-            color: #1e90ff;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        
-        .contact-info a:hover {
-            color: #87ceeb;
-            text-decoration: underline;
-        }
-        
-        .section-divider {
-            border-top: 1px solid rgba(255, 255, 255, 0.3);
-            margin: 25px 0;
+        @media (max-width: 768px) {
+            .page-header h1 {
+                font-size: 2rem;
+            }
+            
+            .form-container {
+                padding: 20px;
+                margin: 10px;
+            }
+            
+            .iframe-wrapper iframe {
+                height: 1000px;
+            }
         }
     </style>
-  
 </head>
-
 <body>
+    <!-- Navigation -->
     <nav class="navbar navbar-glass navbar-fixed-top" role="navigation">  
         <div class="navbar-header">
            
-            <a class="navbar-brand" href="#" style="display: flex; align-items: center;">
+            <a class="navbar-brand" href="index.html" style="display: flex; align-items: center;">
                 <img src="images/spiNavlogo.png" alt="SPI Nav Logo" style="height: 60px; width: auto; margin-right: 10px;">
               Sunchase IV
             </a>
@@ -240,8 +276,8 @@
             <li class="dropdown">
               <a href="#community" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#calendar">Calendar</a></li>
-                <li><a href="#community-info">Community Information</a></li>
+                <li><a href="index.html#calendar">Calendar</a></li>
+                <li><a href="index.html#community-info">Community Information</a></li>
                 <li><a href="Photos.html">Community Photos</a></li>
                 <li><a href="mapping.html">Map</a></li>
               </ul>
@@ -253,72 +289,46 @@
                 <li><a href="document-folder.html">Document Folder</a></li>
               </ul>
             </li>
-          <li><a href="https://my.cheddarup.com/c/sunchase-iv-homeowners-assoc-inc/items" target="_blank">Pay H.O.A</a></li>
-          <li><a href="work-order-request.html">Work Order Request</a></li>
+            <li class="active"><a href="pay-hoa.html">Pay H.O.A</a></li>
+            <li><a href="work-order-request.html">Work Order Request</a></li>
             <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="#register" class="btn-register">Guest Registration</a></li>
-    
-            <li><a href="#signin">Sign-in</a></li>
+            <li><a href="index.html#register" class="btn-register">Guest Registration</a></li>
+
+            <li><a href="index.html#signin">Sign-in</a></li>
             <li><a href="register.html">Register</a></li>
           </ul>
         
       </div>
     </nav>
 
-<div class="main" id="background-carousel">
-    <div class="cover black" data-color="black"></div>
-    
-    <!-- Background Image -->
-    <div id="background-image" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-image: url('images/beach2.png'); background-size: cover; background-position: center; background-repeat: no-repeat; z-index: -1;"></div>
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="page-header">
+            <h1>Pay H.O.A Dues</h1>
+            <p>Make your homeowners association payment securely online</p>
+        </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <div class="contact-container">
-                    <h1 class="contact-title">Contact Us</h1>
-                    
-                    <div class="contact-info">
-                        <h3>Sunchase IV Homeowners Association, Inc.</h3>
-                        
-                        <p><strong>Address:</strong><br>
-                        1000 Padre Blvd.<br>
-                        South Padre Island, TX 78597</p>
-                        
-                        <p><strong>Phone:</strong> (956) 761-4498</p>
-                        
-                        <p><strong>Fax:</strong> (956) 761-0610</p>
-                        
-                        <div class="section-divider"></div>
-                        
-                        <p><strong>Community Manager:</strong>Jose Galvan<br>
-                        <strong>Email:</strong> <a href="mailto:sunchivhoa@aol.com">sunchivhoa@aol.com</a></p>
-                        
-                        <div class="section-divider"></div>
-                        
-                        <p><strong>Need help with the website?</strong></p>
-                        <p>Email our community's volunteer website editor at:<br>
-                        <a href="mailto:Editor@SunchaseIV.org">Editor@SunchaseIV.org</a></p>
-                    </div>
-                </div>
+        <div class="form-container">
+            <div class="payment-info">
+                <h3>💳 Secure Payment Portal</h3>
+                <p><strong>Pay your H.O.A dues safely and conveniently:</strong></p>
+                <p>All payments are processed securely through CheddarUp</p>
+            </div>
+
+            <div class="iframe-wrapper">
+                <iframe src="https://my.cheddarup.com/c/sunchase-iv-homeowners-assoc-inc/items" 
+                        frameborder="0" 
+                        allowfullscreen>
+                    <p>Your browser does not support iframes. Please <a href="https://my.cheddarup.com/c/sunchase-iv-homeowners-assoc-inc/items" target="_blank">click here</a> to open the payment portal in a new window.</p>
+                </iframe>
             </div>
         </div>
     </div>
-    
-    <div class="footer">
-      <div class="container">
-      Sunchase IV Homeowners Association
-      </div>
-    </div>
- </div>
- </body>
-      <script src="js/jquery-1.10.2.js" type="text/javascript"></script>
-   <script src="js/bootstrap.min.js" type="text/javascript"></script>
-   
-   <script type="text/javascript">
-   $(document).ready(function() {
-       // Video background is handled by HTML5 video element
-       // The video will autoplay, loop, and cover the full background
-   });
-   </script>
 
+   
+
+    <!-- Scripts -->
+    <script src="js/jquery-1.10.2.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+</body>
 </html> 

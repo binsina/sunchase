@@ -17,6 +17,7 @@
     <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
     
     <style>
+     
         /* Glass Navigation Bar Styles */
         .navbar-glass {
             background: rgba(0, 0, 0, 0.3) !important;
@@ -26,7 +27,7 @@
             box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
         }
         
-                .navbar-glass .navbar-brand {
+            .navbar-glass .navbar-brand {
             color: white !important;
             font-weight: bold;
             font-size: 20px;
@@ -115,7 +116,7 @@
         }
         
         /* Ensure navbar brand starts from far left */
-        .navbar-glass .container {
+        .navbar-glass .container1 {
             padding-left: 0;
         }
         
@@ -127,12 +128,13 @@
         .navbar-glass .navbar-nav {
             display: flex;
             align-items: center;
+            margin-left: 25px;
+            margin-top: 15px;
         }
         
         .navbar-glass .navbar-nav > li {
             display: flex;
             align-items: center;
-            margin-top: 10px;
             margin-right: 15px;
         }
         
@@ -180,12 +182,8 @@
         </a>
     
       </div>
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-  
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  <div class="container1">
+   
       <ul class="nav navbar-nav">
         <li><a href="index.html">Home</a></li>
         <li class="dropdown">
@@ -200,20 +198,22 @@
         <li class="dropdown">
           <a href="#documentation" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Documentation <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#document-list">Document List</a></li>
-            <li><a href="#document-folder">Document Folder</a></li>
+            <li><a href="documents.html">Document List</a></li>
+            <li><a href="document-folder.html">Document Folder</a></li>
           </ul>
         </li>
-        <li><a href="https://sunchase-iv-homeowners-assoc-inc.cheddarup.com" target="_blank">Pay H.O.A</a></li>
-        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScQgQyJRmchm8QcXAEWNeTSHwlcqr-psxNYFwkexvT7uAOmPg/viewform" target="_blank">Work Order Request</a></li>
+        <li><a href="https://my.cheddarup.com/c/sunchase-iv-homeowners-assoc-inc/items" target="_blank">Pay H.O.A</a></li>
+        <li><a href="work-order-request.html">Work Order Request</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
         <li><a href="#register" class="btn-register">Guest Registration</a></li>
+
+        <li><a href="#signin">Sign-in</a></li>
+        <li><a href="register.html">Register</a></li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#signin" class="btn-signin">Sign-in</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container -->
+    
+  </div>
 </nav>
+
 <div class="main" id="background-carousel">
 
 
